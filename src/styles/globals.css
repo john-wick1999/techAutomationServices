@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --gradient-start: #000000;
+  --gradient-end: #05034B;
+}
+
+body {
+  background: linear-gradient(to right, #000000 40%, #000000, #05034B);
+}
