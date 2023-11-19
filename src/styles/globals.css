@@ -8,8 +8,84 @@
   --background-end-rgb: 255, 255, 255;
   --gradient-start: #000000;
   --gradient-end: #05034B;
+
+  --wrapper: 100vw;
+  --gutter: 10px;
+  
+  --rh: calc((var(--wrapper) - (3 * var(--gutter))) / 4);
 }
 
 body {
   background: linear-gradient(to right, #000000 40%, #000000, #05034B);
+}
+
+.text-msm {
+  font-size: 1.00rem/* 14px */;
+  line-height: 1.50rem/* 20px */;
+}
+
+.grid {
+  
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns grid */
+  gap: var(--gutter); /* Gap between the grid items */
+  margin: auto; /* Center the grid horizontally */
+}
+
+.grid__item {
+  background-color: hotpink; /* Just for visibility */
+  position: relative; /* Needed for absolute positioning of the content */
+}
+
+.grid__item::before {
+  content: '';
+  display: block;
+  padding-top: 100%; /* Square aspect ratio trick */
+}
+
+.grid__item--sm {
+  
+}
+
+.grid__item > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid__item--lg {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: rebeccapurple;
+}
+
+.grid__item--db {
+  grid-column: span 2;
+  background-color: goldenrod;
+}
+
+.grid__item--db::before {
+  padding-top: 50%; /* Adjusts to a 2:1 aspect ratio */
+}
+
+@media (max-width:1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 4 columns grid */
+  }
+
+  .grid__item::before {
+    padding-top: 50%; /* Square aspect ratio trick */
+  }
+
+  .grid__item--sm {
+    grid-column: span 2;
+  }
 }

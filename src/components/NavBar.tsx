@@ -10,7 +10,7 @@ function NavBar() {
   return (
     <div>
       <nav className="w-full fixed top-0 left-0 right-0 z-10 
-                    bg-black opacity-80 
+                    bg-black opacity-90 
                       h-15 cmd:h-20">
         <div className="justify-between
                         cmd:mx-20 

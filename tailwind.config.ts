@@ -17,6 +17,9 @@ const config: Config = {
         'cmd' : '1440px',
         'cmdm': '900px',
       },
+      blur: {
+        xs: '1px',
+      }
     },
   },
   plugins: [],
