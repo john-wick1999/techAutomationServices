@@ -11,10 +11,10 @@ function NavBar() {
     <div>
       <nav className="w-full fixed top-0 left-0 right-0 z-10 
                     bg-black opacity-90 
-                      h-15 cmd:h-20">
+                      h-15 2-5xl:h-36">
         <div className="justify-between
                         cmd:mx-20 
-                        h-15 cmd:h-20 cmdm:px-8 px-4
+                        h-15 2-5xl:h-36 cmdm:px-8 px-4
                         cmdm:items-center cmdm:flex ">
           <div>
             <div className="flex py-3 
@@ -24,11 +24,14 @@ function NavBar() {
               <Link href="/" className='flex items-center'>
                 <Image
                   src="/Logo TAS 4.png"
-                  width={50}
-                  height={50}
+                  width={70}
+                  height={70}
                   alt="Tech Automation Services"
                 />
-                <span className="hidden cmd:inline-block cmd:flex-2 ml-3 text-xl font-bold text-white ">
+                <span className="hidden cmd:inline-block cmd:flex-2
+                                 ml-6 3xl:ml-10
+                                 text-xl cmd:text-2xl 2-5xl:text-3xl 3-5xl:text-4xl
+                                 font-bold text-white ">
                   TECH AUTOMATION SERVICES
                 </span>
               </Link>
@@ -58,47 +61,27 @@ function NavBar() {
                 navbar ? 'p-12 cmdm:p-0 block' : 'hidden'
               }`}            >
               <ul className="h-screen cmdm:h-auto items-center justify-center cmdm:flex ">
-                <li className="py-2 items-center 
-                               border-b-2 border-purple-900
-                               text-xl font-bold text-white 
-                               cmdm:px-6 text-center cmdm:border-b-0 cmdm:hover:bg-transparent
-                             hover:bg-purple-900  border-purple-900  cmdm:hover:text-purple-600">
+                <li className="nav-bar__items">
                   <Link href="#about" onClick={() => setNavbar(!navbar)}>
                     ABOUT US
                   </Link>
                 </li>
-                <li className="py-2 items-center 
-                               border-b-2 border-purple-900
-                               text-xl font-bold text-white 
-                               cmdm:px-6 text-center cmdm:border-b-0 cmdm:hover:bg-transparent
-                             hover:bg-purple-900  border-purple-900  cmdm:hover:text-purple-600">
+                <li className="nav-bar__items">
                   <Link href="#about" onClick={() => setNavbar(!navbar)}>
                     SOLUTIONS
                   </Link>
                 </li>
-                <li className="py-2 items-center 
-                               border-b-2 border-purple-900
-                               text-xl font-bold text-white 
-                               cmdm:px-6 text-center cmdm:border-b-0 cmdm:hover:bg-transparent
-                             hover:bg-purple-900  border-purple-900  cmdm:hover:text-purple-600">
+                <li className="nav-bar__items">
                   <Link href="#about" onClick={() => setNavbar(!navbar)}>
                     PROJECTS
                   </Link>
                 </li>
-                <li className="py-2 items-center 
-                               border-b-2 border-purple-900
-                               text-xl font-bold text-white 
-                               cmdm:px-6 text-center cmdm:border-b-0 cmdm:hover:bg-transparent
-                             hover:bg-purple-900  border-purple-900  cmdm:hover:text-purple-600">
+                <li className="nav-bar__items">
                   <Link href="#about" onClick={() => setNavbar(!navbar)}>
                     CAREERS
                   </Link>
                 </li>
-                <li className="py-2 items-center 
-                               border-b-2 border-purple-900
-                               text-xl font-bold text-white 
-                               cmdm:px-6 text-center cmdm:border-b-0 cmdm:hover:bg-transparent
-                             hover:bg-purple-900  border-purple-900  cmdm:hover:text-purple-600">
+                <li className="nav-bar__items">
                   <Link href="#about" onClick={() => setNavbar(!navbar)}>
                     <div className="rounded-lg px-5 py-2.5 items-center
                                     text-center text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 

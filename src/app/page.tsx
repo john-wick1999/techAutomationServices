@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -8,8 +9,8 @@ export default function Home() {
         <Image
           className='hidden md:block'
           src="/Home Page Brain 3.png"
-          width={3840}
-          height={2019}
+          width={7680}
+          height={4038}
           alt='Home Page'
         />
         <Image
@@ -20,7 +21,7 @@ export default function Home() {
           alt='Home Page'
         />
         <div className="absolute top-44 cmdm:top-1/2 left-1/2 cmdm:left-1/4 transform -translate-x-1/2 -translate-y-1/2">
-          <h1 className="text-5xl md:text-6xl xl:text-9xl font-bold text-white text-center cmdm:text-left">
+          <h1 className="text-h1-main">
             <span className="block">TECH</span>
             <span className="block text-purple-700 sm:text-purple-800">AUTOMATION</span>
             <span className="block">SERVICES</span>
@@ -29,82 +30,91 @@ export default function Home() {
       </div>
 
 
-      <section id='about' className="my-12 md:my-28 justify-between items-center">
-        <div className="flex mx-28 my-12">
+      <section id='about'>
+        <div className='mx-auto mt-16 md:mt-56 px-9 2xl:px-20 3xl:px-40 4xl:px-96 h-auto text-center'>
+          <div className="grid-about mx-auto px-4">
+            <div className="grid__item-about grid__item-about-1">
+              {/* Content for Column 1 */}
+              <Image
+                src="/team.png"
+                alt="Team"
+                width={3840}
+                height={2160}
+                className="rounded-lg"
+              />
+            </div>
 
-          <div className='flex'>
-          <div className="w-full md:w-1/2 md:pr-5 lg:pr-10">
-            <Image
-              src="/team.png"
-              alt="Team"
-              layout="responsive"
-              width={3840}
-              height={2160} // These should be the aspect ratio of your image
-              className="rounded-lg"
-            />
-          </div>
-          
-            <div className="flex items-center w-full md:w-1/2 md:-mr-10 lg:-mr-20 text-white">
-              <div>
-              <h2 className="cmd:text-6xl text-4xl font-extrabold mb-4 text-purple-700">ABOUT US</h2>
-              <p className="mb-4 cmd:text-lg cmdm:text-msm text-sm">
+            <div className="grid__item-about order-2 grid__item-about-2 xl:text-left">
+              {/* Content for Column 2 */}
+              <h2 className="text-h2-main mb-4">
+                ABOUT US
+              </h2>
+              <p className="text-main">
                 At Tech Automation Services, we pride ourselves on a decade of engineering excellence. Our team comprises seasoned engineers who specialize in delivering innovative solutions designed to modernize and automate businesses and industries.
               </p>
-              <p className="mb-4 cmd:text-lg cmdm:text-msm text-sm">
+              <p className="text-main">
                 With over 10 years of experience, we understand the intricacies of technological evolution and are committed to transforming your operational challenges into competitive advantages. Whether streamlining processes or implementing cutting-edge automation, our goal is to enhance efficiency and productivity for clients across various sectors.
               </p>
             </div>
           </div>
         </div>
-        
-        </div>
       </section>
 
       <section id='solutions'>
-        <div className='container mx-auto my-12 px-4 h-auto text-center'>
-          <h2 className='text-6xl text-purple-700 font-extrabold mb-10'>SOLUTIONS</h2>
+        <div className='mx-auto mt-24 md:mt-56 px-9 2xl:px-20 3xl:px-40 4xl:px-96 h-auto text-center'>
+          <h2 className='text-h2-main text-9xl mb-10 md:mb-16'>
+            SOLUTIONS
+          </h2>
 
           <div className="grid my-18">
-            <div className="grid__item grid__item--lg">
-              <div className="flex items-center justify-center h-full">
-                <h3>SOFTWARE</h3>
+            <Link href="/" className="grid__item grid__item--lg">
+              <div className="flex h-full items-center justify-center">
+                <div id="software-bg" className="grid__item-image"></div>
+                <h3 className='text-h3-grip absolute'>SOFTWARE</h3>
               </div>
-            </div>
-            <div className="grid__item grid__item--sm">
+            </Link>
+            <Link href="/" className="grid__item grid__item--sm">
               <div className="flex items-center justify-center h-full">
-                <h3>VISION</h3>
+                <div id="vision-bg" className="grid__item-image"></div>
+                <h3 className='text-h3-grip'>VISION</h3>
               </div>
-            </div>
-            <div className="grid__item grid__item--sm">
+            </Link>
+            <Link href="/" className="grid__item grid__item--sm">
               <div className="flex items-center justify-center h-full">
-                <h3>ROBOTICS</h3>
+                <div id="robotics-bg" className="grid__item-image"></div>
+                <h3 className='text-h3-grip'>ROBOTICS</h3>
               </div>
-            </div>
-            <div className="grid__item grid__item--db">
+            </Link>
+            <Link href="/" className="grid__item grid__item--db">
               <div className="flex items-center justify-center h-full">
-                <h3>MECHANICAL DESIGN</h3>
+                <div id="mechanical-bg" className="grid__item-image"></div>
+                <h3 className='text-h3-grip'>MECHANICAL DESIGN</h3>
               </div>
-            </div>
-            <div className="grid__item grid__item--db">
+            </Link>
+            <Link href="/" className="grid__item grid__item--db">
               <div className="flex items-center justify-center h-full">
-                <h3>MACHINE LEARNING</h3>
+                <div id="machine-learning-bg" className="grid__item-image"></div>
+                <h3 className='text-h3-grip'>MACHINE LEARNING</h3>
               </div>
-            </div>
-            <div className="grid__item grid__item--lg">
+            </Link>
+            <Link href="/" className="grid__item grid__item--lg">
               <div className="flex items-center justify-center h-full">
-                <h3>ELECTRICAL DESIGN</h3>
+                <div id="electrical-bg" className="grid__item-image"></div>
+                <h3 className='text-h3-grip'>ELECTRICAL DESIGN</h3>
               </div>
-            </div>
-            <div className="grid__item grid__item--sm">
+            </Link>
+            <Link href="/" className="grid__item grid__item--sm">
               <div className="flex items-center justify-center h-full">
-                <h3>IoT</h3>
+                <div id="iot-bg" className="grid__item-image"></div>
+                <h3 className='text-h3-grip'>IoT</h3>
               </div>
-            </div>
-            <div className="grid__item grid__item--sm">
+            </Link>
+            <Link href="/" className="grid__item grid__item--sm">
               <div className="flex items-center justify-center h-full">
-                <h3>APP DEV</h3>
+                <div id="app-dev-bg" className="grid__item-image"></div>
+                <h3 className='text-h3-grip'>APP DEV</h3>
               </div>
-            </div>
+            </Link>
 
           </div>
         </div>

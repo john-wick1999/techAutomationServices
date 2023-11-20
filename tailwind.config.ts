@@ -14,8 +14,12 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       screens: {
-        'cmd' : '1440px',
-        'cmdm': '900px',
+        'cmd'  : '1440px',
+        'cmdm' : '900px',
+        '2-5xl': '1750px',
+        '3xl'  : '2000px',
+        '3-5xl': '2200px',
+        '4xl'  : '3000px'
       },
       blur: {
         xs: '1px',

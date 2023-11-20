@@ -24,8 +24,16 @@ body {
   line-height: 1.50rem/* 20px */;
 }
 
-.grid {
-  
+.grid-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 4 columns grid */
+  gap: 50px; /* Gap between the grid items */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid__item-about {
+  position: relative;
 }
 
 .grid {
@@ -36,8 +44,9 @@ body {
 }
 
 .grid__item {
-  background-color: hotpink; /* Just for visibility */
+  background-color: black; /* Just for visibility */
   position: relative; /* Needed for absolute positioning of the content */
+  transition: transform 0.5s ease;
 }
 
 .grid__item::before {
@@ -46,8 +55,16 @@ body {
   padding-top: 100%; /* Square aspect ratio trick */
 }
 
-.grid__item--sm {
-  
+.grid__item > div > h3 {
+  z-index: 3;
+}
+
+.grid__item:hover > div > h3  {
+  transform: scale(1.2);
+}
+
+.grid__item:hover {
+  background-color: rebeccapurple;
 }
 
 .grid__item > div {
@@ -64,16 +81,62 @@ body {
 .grid__item--lg {
   grid-column: span 2;
   grid-row: span 2;
-  background-color: rebeccapurple;
 }
 
 .grid__item--db {
   grid-column: span 2;
-  background-color: goldenrod;
 }
 
 .grid__item--db::before {
   padding-top: 50%; /* Adjusts to a 2:1 aspect ratio */
+}
+
+.grid__item-image::before {
+  background-size: cover;
+  background-position: center;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.7;
+  height: 100%;
+  width: 100%;
+}
+
+#software-bg::before {
+  background-image: url('/software.jpg');
+}
+
+#vision-bg::before {
+  background-image: url('/vision.png');
+}
+
+#robotics-bg::before {
+  background-image: url('/robotics.jpg');
+}
+
+#mechanical-bg::before {
+  background-image: url('/mechanical.png');
+}
+
+#machine-learning-bg::before {
+  background-image: url('/machine-learning.png');
+}
+
+#electrical-bg::before {
+  background-image: url('/electrical.jpg');
+}
+
+#iot-bg::before {
+  background-image: url('/iot.png');
+}
+
+#app-dev-bg::before {
+  background-image: url('/app-dev.png');
 }
 
 @media (max-width:1024px) {
@@ -87,5 +150,78 @@ body {
 
   .grid__item--sm {
     grid-column: span 2;
+  }
+}
+
+@media (max-width:1280px) {
+  .grid-about {
+    grid-template-columns: repeat(1, 1fr); /* 4 columns grid */
+    gap: 15px;
+  }
+
+  .grid__item-about-1 {
+    order: 2;
+  }
+
+  .grid__item-about-2 {
+    order: 1;
+  }
+}
+
+.nav-bar__items {
+  @apply py-2 items-center text-center font-bold text-white ;
+  @apply border-b-2 border-purple-900 cmdm:border-b-0;
+  @apply 2-5xl:mx-2 3-5xl:mx-4;
+  @apply text-xl cmd:text-2xl 2-5xl:text-3xl 3-5xl:text-4xl;
+  @apply cmdm:px-6 cmdm:hover:bg-transparent;
+  @apply cmdm:hover:text-purple-600;
+}
+
+/* styles.css */
+.text-main {
+  @apply mb-4;
+  @apply text-sm text-white;
+  @apply md:text-lg;
+  @apply cmd:text-xl;
+  @apply 2-5xl:text-2xl;
+  @apply 3xl:text-3xl;
+}
+
+/* styles.css or the appropriate css file */
+.text-h2-main {
+  @apply text-5xl font-extrabold text-purple-700;
+  @apply md:text-6xl;
+  @apply cmd:text-7xl;
+  @apply 2-5xl:text-8xl;
+  @apply 3xl:text-9xl;
+}
+
+.text-h3-grip {
+  @apply mb-4;
+  @apply text-2xl font-extrabold mb-4 text-white;
+  @apply md:text-4xl;
+  @apply cmd:text-5xl;
+  @apply 2-5xl:text-6xl;
+  @apply 3xl:text-7xl;
+}
+
+.text-h1-main {
+  @apply mb-4;
+  @apply text-4xl font-extrabold text-white text-center cmdm:text-left;
+  @apply cmdm:text-left;
+  @apply md:text-7xl;
+  @apply cmd:text-8xl;
+  @apply 2-5xl:text-9xl;
+}
+
+@media (min-width:2000px) {
+  .text-h1-main {
+    font-size: 10rem;
+  }
+}
+
+@media (min-width:2700px) {
+  .text-h1-main {
+    font-size: 12rem;
   }
 }
