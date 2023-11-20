@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { Ubuntu_Mono } from 'next/font/google'
 import '../styles/globals.css'
-import NavBar from '@/components/NavBar'
+import NavBar from '@/components/navBar'
+import Footer from '@/components/footer'
 
 const font = Ubuntu_Mono({ subsets: ['latin'], 
                            weight: ['400']})
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: {
       <body className={`${font.className}`}>
         <NavBar/>
         {children}
+        <Footer/>
       </body>
     </html>
   )

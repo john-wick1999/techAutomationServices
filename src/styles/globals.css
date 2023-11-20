@@ -19,6 +19,13 @@ body {
   background: linear-gradient(to right, #000000 40%, #000000, #05034B);
 }
 
+footer {
+  background: rgb(10,0,36);
+  background: linear-gradient(45deg, rgba(10,0,36,1) 0%, rgba(149,0,255,1) 100%);
+  margin-top: 24rem;
+  height: 400px;
+}
+
 .text-msm {
   font-size: 1.00rem/* 14px */;
   line-height: 1.50rem/* 20px */;
@@ -113,6 +120,7 @@ body {
 
 #vision-bg::before {
   background-image: url('/vision.png');
+  opacity:0.5;
 }
 
 #robotics-bg::before {
@@ -212,6 +220,14 @@ body {
   @apply md:text-7xl;
   @apply cmd:text-8xl;
   @apply 2-5xl:text-9xl;
+}
+
+.contact-us-button {
+  @apply rounded-lg px-5 py-2.5 items-center;
+  @apply text-center text-white;
+  @apply bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700;
+  @apply hover:bg-gradient-to-br;
+  @apply focus:ring-4 focus:outline-none focus:ring-purple-300;
 }
 
 @media (min-width:2000px) {

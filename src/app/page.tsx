@@ -26,6 +26,11 @@ export default function Home() {
             <span className="block text-purple-700 sm:text-purple-800">AUTOMATION</span>
             <span className="block">SERVICES</span>
           </h1>
+          <div className="contact-us-button text-7xl font-extrabold w-2/3 mt-40 ">
+            <Link href="#about" className=''>
+              <span className=''>CONTACT US</span>
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -119,6 +124,14 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className='mx-auto md:mt-96 px-9 2xl:px-20 3xl:px-40 4xl:px-96 text-center contact-us-button text-7xl font-extrabold w-1/3 mt-96'>
+        <Link href="#about" className=''>
+          <div className="">
+            <span className=''>CONTACT US</span>
+          </div>
+        </Link>
+      </div>
 
     </div>
   );
