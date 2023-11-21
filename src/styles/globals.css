@@ -22,8 +22,14 @@ body {
 footer {
   background: rgb(10,0,36);
   background: linear-gradient(45deg, rgba(10,0,36,1) 0%, rgba(149,0,255,1) 100%);
-  margin-top: 24rem;
+  margin-top: 9rem;
   height: 400px;
+}
+
+@media (min-width:768px) {
+  footer {
+    margin-top: 24rem;
+  }
 }
 
 .text-msm {
@@ -180,7 +186,7 @@ footer {
   @apply py-2 items-center text-center font-bold text-white ;
   @apply border-b-2 border-purple-900 cmdm:border-b-0;
   @apply 2-5xl:mx-2 3-5xl:mx-4;
-  @apply text-xl cmd:text-2xl 2-5xl:text-3xl 3-5xl:text-4xl;
+  @apply text-2xl 2-5xl:text-3xl 3-5xl:text-4xl;
   @apply cmdm:px-6 cmdm:hover:bg-transparent;
   @apply cmdm:hover:text-purple-600;
 }
@@ -193,6 +199,13 @@ footer {
   @apply cmd:text-xl;
   @apply 2-5xl:text-2xl;
   @apply 3xl:text-3xl;
+}
+
+.text-h1-main {
+  @apply text-5xl font-extrabold text-white text-center;
+  @apply md:text-7xl;
+  @apply cmd:text-8xl cmdm:text-left;
+  @apply 2-5xl:text-9xl;
 }
 
 /* styles.css or the appropriate css file */
@@ -213,21 +226,16 @@ footer {
   @apply 3xl:text-7xl;
 }
 
-.text-h1-main {
-  @apply mb-4;
-  @apply text-4xl font-extrabold text-white text-center cmdm:text-left;
-  @apply cmdm:text-left;
-  @apply md:text-7xl;
-  @apply cmd:text-8xl;
-  @apply 2-5xl:text-9xl;
-}
-
 .contact-us-button {
-  @apply rounded-lg px-5 py-2.5 items-center;
-  @apply text-center text-white;
+  @apply rounded-lg items-center;
   @apply bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700;
   @apply hover:bg-gradient-to-br;
   @apply focus:ring-4 focus:outline-none focus:ring-purple-300;
+  @apply text-2xl text-center text-white font-extrabold;
+  @apply md:text-4xl;
+  @apply cmd:text-5xl;
+  @apply 2-5xl:text-6xl;
+  @apply 3xl:text-7xl;
 }
 
 @media (min-width:2000px) {

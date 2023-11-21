@@ -5,12 +5,12 @@ export default function Home() {
 
   return (
     <div>
-      <div className='relative h-auto'>
+      <header className='relative h-auto items-center'>
         <Image
           className='hidden md:block'
           src="/Home Page Brain 3.png"
           width={7680}
-          height={4038}
+          height={7038}
           alt='Home Page'
         />
         <Image
@@ -20,19 +20,22 @@ export default function Home() {
           height={2019}
           alt='Home Page'
         />
-        <div className="absolute top-44 cmdm:top-1/2 left-1/2 cmdm:left-1/4 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute top-44 cmdm:top-1/2 left-1/2 cmdm:left-1/4 transform -translate-x-1/2 md:-translate-y-1/2">
           <h1 className="text-h1-main">
-            <span className="block">TECH</span>
-            <span className="block text-purple-700 sm:text-purple-800">AUTOMATION</span>
+            <span className="block ">TECH</span>
+            <span className="block text-purple-700" >AUTOMATION</span>
             <span className="block">SERVICES</span>
           </h1>
-          <div className="contact-us-button text-7xl font-extrabold w-2/3 mt-40 ">
+          <div className="contact-us-button md:w-2/3 
+                          mt-8 md:mt-16 cmd:mt-24 2-5xl:mt-36 3xl:mt-40
+                          py-2 md:py-9
+                          mx-8 md:mx-0">
             <Link href="#about" className=''>
               <span className=''>CONTACT US</span>
             </Link>
           </div>
         </div>
-      </div>
+      </header>
 
 
       <section id='about'>
@@ -125,10 +128,14 @@ export default function Home() {
         </div>
       </section>
 
-      <div className='mx-auto md:mt-96 px-9 2xl:px-20 3xl:px-40 4xl:px-96 text-center contact-us-button text-7xl font-extrabold w-1/3 mt-96'>
-        <Link href="#about" className=''>
-          <div className="">
-            <span className=''>CONTACT US</span>
+      <div className='contact-us-button 
+                      mx-auto
+                      w-1/2 md:w-1/3 
+                      mt-32 md:mt-96
+                      py-4 md:py-24'>
+        <Link href="#about" className='w-full'>
+          <div>
+            <span>CONTACT US</span>
           </div>
         </Link>
       </div>
