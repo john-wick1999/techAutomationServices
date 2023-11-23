@@ -131,7 +131,7 @@ export default function Home() {
       </section>
 
       <Link href={routes.About} className=''>
-          <div className="contact-us-button mt-32 md:mt-96 py-28 mx-auto
+          <div className="contact-us-button mt-32 md:mt-96 py-5 md:py-28 mx-auto
                       w-1/2 md:w-1/3 ">
             <span>CONTACT US</span>
           </div>
