@@ -1,5 +1,14 @@
-export const routes = [
-    { name: "Home", link: "/" },
-    { name: "About", link: "/about" },
-    // { name: "path name", link: "link url" }, like this
-  ];
+// routes.ts
+export const routes = {
+  Home: "/",
+  About: "/about",
+  Solutions: "/solutions",
+  Projects: "/projects",
+  Careers: "/careers",
+  Contact: "/contact",
+  Facebook: "https://facebook.com",
+  Github: "https://github.com",
+  Instagram: "https://instagram.com",
+  Linkedin: "https://linkedin.com",
+  X: "x.com"
+};

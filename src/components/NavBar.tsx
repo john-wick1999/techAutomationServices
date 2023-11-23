@@ -4,6 +4,8 @@ import Image from 'next/image'
 import { FiMenu, FiX } from "react-icons/fi";
 import { useState } from 'react';
 
+import { routes } from '../data/routes'
+
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
@@ -21,11 +23,12 @@ function NavBar() {
                             items-center justify-between 
                             cmdm:py-5 cmdm:block">
               {/* LOGO */}
-              <Link href="/" className='flex items-center'>
+              <Link href={routes.Home} className='flex items-center'>
                 <Image
+                  className='h-auto'
                   src="/Logo TAS 4.png"
                   width={70}
-                  height={70}
+                  height="0"
                   alt="Tech Automation Services"
                 />
                 <span className="hidden cmd:inline-block cmd:flex-2
@@ -62,27 +65,27 @@ function NavBar() {
               }`}            >
               <ul className="h-screen cmdm:h-auto items-center justify-center cmdm:flex ">
                 <li className="nav-bar__items">
-                  <Link href="#about" onClick={() => setNavbar(!navbar)}>
+                  <Link href={routes.About} onClick={() => setNavbar(!navbar)}>
                     ABOUT US
                   </Link>
                 </li>
                 <li className="nav-bar__items">
-                  <Link href="#about" onClick={() => setNavbar(!navbar)}>
+                  <Link href={routes.Solutions} onClick={() => setNavbar(!navbar)}>
                     SOLUTIONS
                   </Link>
                 </li>
                 <li className="nav-bar__items">
-                  <Link href="#about" onClick={() => setNavbar(!navbar)}>
+                  <Link href={routes.Projects} onClick={() => setNavbar(!navbar)}>
                     PROJECTS
                   </Link>
                 </li>
                 <li className="nav-bar__items">
-                  <Link href="#about" onClick={() => setNavbar(!navbar)}>
+                  <Link href={routes.Careers} onClick={() => setNavbar(!navbar)}>
                     CAREERS
                   </Link>
                 </li>
                 <li className="nav-bar__items">
-                  <Link href="#about" onClick={() => setNavbar(!navbar)}>
+                  <Link href={routes.Contact} onClick={() => setNavbar(!navbar)}>
                     <div className="rounded-lg px-5 py-2.5 items-center
                                     text-center text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 
                                     hover:bg-gradient-to-br 
