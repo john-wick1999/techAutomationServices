@@ -1,5 +1,18 @@
 import Image from 'next/image'
 import Link from 'next/link';
+import { routes } from '@/data/routes';
+import { siteMetadata } from '../../config/siteMetadata.js';
+
+export const metadata = {
+  title: siteMetadata.title, //title of the tab
+  description: `At Tech Automation Services, we pride ourselves on a decade of engineering excellence.
+    Our team comprises seasoned engineers who specialize in delivering innovative solutions designed to modernize and automate businesses and industries.
+
+    With over 10 years of experience, we understand the intricacies of technological evolution and are committed to transforming your operational challenges into competitive advantages. Whether streamlining processes or implementing cutting-edge automation, our goal is to enhance efficiency and productivity for clients across various sectors.`,
+  icons: {
+    icon: siteMetadata.favicon, // Path of the favicon of the page
+  },
+};
 
 export default function Home() {
 
@@ -64,7 +77,7 @@ export default function Home() {
                       w-1/2 md:w-1/3 
                       mt-32 md:mt-96
                       py-4 md:py-24'>
-        <Link href="#about" className='w-full'>
+        <Link href={routes.Contact} className='w-full'>
           <div>
             <span>CONTACT US</span>
           </div>
