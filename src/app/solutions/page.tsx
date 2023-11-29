@@ -32,7 +32,7 @@ export default function Home() {
           <h1 className="text-h1">
             <span className="mr-7 md:mr-14 text-center text-purple-700">SOLUTIONS</span>
           </h1>
-          <p className="text-center text-main">
+          <p className="text-main text-center">
           Making dreams real by means of technology 
           </p>
         </div>
@@ -91,7 +91,7 @@ export default function Home() {
               Are you interested in a custom electronic product for yourself or a business? Or maybe you have in mind a potentially marketable electronic product? Well, we are your engineering power!
               </p>
               <p className="text-main">
-              We are capable of designing electronic devices and delivering working prototypes on a printed circuit board like in the above video. Contact us and see what we can do for you.
+              We are capable of designing electronic devices and delivering working prototypes on a printed circuit board. Contact us and see what we can do for you.
               </p>
             </div>
           </div>
