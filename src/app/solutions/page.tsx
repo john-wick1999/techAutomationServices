@@ -130,7 +130,7 @@ export default function Home() {
                       mx-auto
                       w-1/2 md:w-1/3 
                       mt-32 md:mt-96
-                      py-4 md:py-24'>
+                      py-5 md:py-16'>
         <Link href={routes.Contact} className='w-full'>
           <div>
             <span>CONTACT US</span>
