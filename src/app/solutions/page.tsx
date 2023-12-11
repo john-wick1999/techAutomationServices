@@ -27,13 +27,19 @@ export default function Home() {
           height={7038}
           autoPlay muted loop
         />
+        <video className='block md:hidden'
+          src="/network-mobile.mp4"
+          width={1200}
+          height={1400}
+          autoPlay muted loop
+        />
 
         <div className="absolute top-52 cmdm:top-1/2 left-1/2 transform -translate-x-1/2 md:-translate-y-1/2">
           <h1 className="text-h1">
             <span className="mr-7 md:mr-14 text-center text-purple-700">SOLUTIONS</span>
           </h1>
           <p className="text-main text-center">
-          Making dreams real by means of technology 
+            Making dreams real by means of technology
           </p>
         </div>
       </header>
@@ -44,7 +50,7 @@ export default function Home() {
           <div className="grid-about mx-auto px-4">
             <div className="grid__item-about grid__item-about-1">
               {/* Content for Column 1 */}
-              <video className='hidden md:block'
+              <video className=''
                 src="/Software.mp4"
                 width={3840}
                 height={2160}
@@ -55,13 +61,13 @@ export default function Home() {
             <div className="grid__item-about order-2 grid__item-about-2 xl:text-left">
               {/* Content for Column 2 */}
               <h2 className="text-h2-main mb-4">
-                SOFTWARE
+                VISION
               </h2>
               <p className="text-main">
-              Like manufacturing processes, computing processes can be automated using automation software. Process automation can bring efficiency and cost reduction to your personal or business processes. We are in the automation era, which means that to stay competitive automation is a must.
+                Like manufacturing processes, computing processes can be automated using automation software. Process automation can bring efficiency and cost reduction to your personal or business processes. We are in the automation era, which means that to stay competitive automation is a must.
               </p>
               <p className="text-main">
-              We can help you identify which processes could be automated in your business. We can design custom automation software solutions like applications, scripts, and even machine learning models to satisfy your personal and/or business automation needs.
+                We can help you identify which processes could be automated in your business. We can design custom automation software solutions like applications, scripts, and even machine learning models to satisfy your personal and/or business automation needs.
               </p>
             </div>
           </div>
@@ -70,40 +76,41 @@ export default function Home() {
 
 
       <section id='electrical'>
-        <div className='mx-auto mt-16 md:mt-40 px-9 2xl:px-20 3xl:px-40 4xl:px-96 h-auto text-center'>
+        <div className='mx-auto mt-20 md:mt-40 px-9 2xl:px-20 3xl:px-40 4xl:px-96 h-auto text-center'>
           <div className="grid-about mx-auto px-4">
-          <div className="grid__item-about order-2 grid__item-about-2">
+
+          <div className="grid__item-about xl:text-left">
+              {/* Content for Column 2 */}
+              <h2 className="text-h2-main mb-4">
+                ELECTRICAL DESIGN
+              </h2>
+              <p className="text-main">
+                Are you interested in a custom electronic product for yourself or a business? Or maybe you have in mind a potentially marketable electronic product? Well, we are your engineering power!
+              </p>
+              <p className="text-main">
+                We are capable of designing electronic devices and delivering working prototypes on a printed circuit board. Contact us and see what we can do for you.
+              </p>
+            </div>
+
+            <div className="grid__item-about">
               {/* Content for Column 1 */}
-              <video className='hidden md:block'
+              <video className=''
                 src="/Electrical Design.mp4"
                 width={3840}
                 height={2160}
                 autoPlay muted loop
               />
             </div>
-
-          <div className="grid__item-about  grid__item-about-1 xl:text-left">
-              {/* Content for Column 2 */}
-              <h2 className="text-h2-main mb-4">
-                ELECTRICAL DESIGN
-              </h2>
-              <p className="text-main">
-              Are you interested in a custom electronic product for yourself or a business? Or maybe you have in mind a potentially marketable electronic product? Well, we are your engineering power!
-              </p>
-              <p className="text-main">
-              We are capable of designing electronic devices and delivering working prototypes on a printed circuit board. Contact us and see what we can do for you.
-              </p>
-            </div>
           </div>
         </div>
       </section>
 
       <section id='mechanical'>
-        <div className='mx-auto mt-16 md:mt-40 px-9 2xl:px-20 3xl:px-40 4xl:px-96 h-auto text-center'>
+        <div className='mx-auto mt-20 md:mt-40 px-9 2xl:px-20 3xl:px-40 4xl:px-96 h-auto text-center'>
           <div className="grid-about mx-auto px-4">
             <div className="grid__item-about grid__item-about-1">
               {/* Content for Column 1 */}
-              <video className='hidden md:block'
+              <video className=''
                 src="/Mechanical design.mp4"
                 width={3840}
                 height={2160}
@@ -116,10 +123,10 @@ export default function Home() {
                 MECHANICAL DESIGN
               </h2>
               <p className="text-main">
-              In need of custom mechanical parts and prototypes? We are also capable of designing mechanical parts and systems that may fit your needs. We work live and directly with our customers to achieve their custom needs.
+                In need of custom mechanical parts and prototypes? We are also capable of designing mechanical parts and systems that may fit your needs. We work live and directly with our customers to achieve their custom needs.
               </p>
               <p className="text-main">
-              We can also provide you sample 3D printed prototypes so you get hands-on! Contact us and see what we can do for you.
+                We can also provide you sample 3D printed prototypes so you get hands-on! Contact us and see what we can do for you.
               </p>
             </div>
           </div>
@@ -129,7 +136,7 @@ export default function Home() {
       <div className='contact-us-button 
                       mx-auto
                       w-1/2 md:w-1/3 
-                      mt-24 md:mt-80
+                      mt-28 md:mt-80
                       py-5 md:py-16'>
         <Link href={routes.Contact} className='w-full'>
           <div>

@@ -239,6 +239,12 @@ footer {
   @apply 3xl:text-9xl;
 }
 
+.text-h2-long {
+  @apply text-3xl font-extrabold text-purple-700;
+  @apply md:text-6xl;
+  @apply 3xl:text-7xl;
+}
+
 .text-h3-grip {
   @apply mb-4;
   @apply text-2xl font-extrabold mb-4 text-white;
