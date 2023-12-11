@@ -37,7 +37,7 @@ export default function Home() {
           <h1 className="text-h1-main">
             <span className="block ">TECH</span>
             <span className="block text-purple-700" >AUTOMATION</span>
-            <span className="block">SERVICES</span>
+            <span className="block">SOLUTIONS</span>
           </h1>
 
           <Link href={routes.Contact}>
