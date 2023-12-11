@@ -97,7 +97,7 @@ export default function Home() {
       <div className='contact-us-button 
                       mx-auto
                       w-1/2 md:w-1/3 
-                      mt-32 md:mt-96
+                      mt-24 md:mt-80
                       py-5 md:py-16'>
         <Link href={routes.Contact} className='w-full'>
           <div>

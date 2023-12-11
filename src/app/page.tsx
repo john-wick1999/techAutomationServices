@@ -143,7 +143,7 @@ export default function Home() {
       </section>
 
       <Link href={routes.Contact} className=''>
-          <div className="contact-us-button mt-32 md:mt-96 py-5 md:py-16 mx-auto
+          <div className="contact-us-button mt-24 md:mt-80 py-5 md:py-16 mx-auto
                       w-1/2 md:w-1/3 ">
             <span>CONTACT US</span>
           </div>
