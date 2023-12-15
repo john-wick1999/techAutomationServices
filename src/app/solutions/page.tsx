@@ -79,7 +79,7 @@ export default function Home() {
         <div className='mx-auto mt-20 md:mt-40 px-9 2xl:px-20 3xl:px-40 4xl:px-96 h-auto text-center'>
           <div className="grid-about mx-auto px-4">
 
-          <div className="grid__item-about xl:text-left">
+          <div className="grid__item-about xl:text-right">
               {/* Content for Column 2 */}
               <h2 className="text-h2-main mb-4">
                 ELECTRICAL DESIGN

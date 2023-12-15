@@ -10,5 +10,5 @@ export const routes = {
   Github: "https://github.com",
   Instagram: "https://instagram.com",
   Linkedin: "https://linkedin.com",
-  X: "x.com"
+  X: "https://x.com"
 };

@@ -246,12 +246,13 @@ footer {
 }
 
 .text-h3-grip {
-  @apply mb-4;
-  @apply text-2xl font-extrabold mb-4 text-white;
-  @apply md:text-4xl;
-  @apply cmd:text-5xl;
-  @apply 2-5xl:text-6xl;
-  @apply 3xl:text-7xl;
+  @apply xl:mb-4;
+  @apply text-purple-400;
+  @apply text-lg font-extrabold;
+  @apply md:text-xl;
+  @apply cmd:text-xl;
+  @apply 2-5xl:text-2xl;
+  @apply 3xl:text-2xl;
 }
 
 .contact-us-button {
