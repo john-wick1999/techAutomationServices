@@ -95,14 +95,14 @@ const ContactUs = () => {
   return (
     <>
         {isLoading && (
-        <div className="fixed top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white text-2xl z-50">
+        <div className="fixed top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white text-xl z-50">
             <div className="loader my-3"></div>
             Sending...
         </div>
         )}
         <ToastContainer position="bottom-right" />
         <div className="flex justify-center items-center min-h-screen">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-6xl mx-auto ">
                 {/* Form Section */}
                 <div className="p-8 contact-form">
                     <form onSubmit={handleSubmit} className="bg-gray-800 shadow-xl rounded-lg px-8 pt-6 pb-8">
@@ -160,12 +160,13 @@ const ContactUs = () => {
                     <div className="p-8">
                         <iframe
                             title="Our Location"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23577.71581623809!2d-70.98504008333519!3d42.38057730733057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e36e529f580fb7%3A0x8f4289ed542932a3!2sWinthrop%2C%20MA!5e0!3m2!1sen!2sus!4v1700758699382!5m2!1sen!2sus" // Replace with your Google Maps embed URL
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d975202.0568582813!2d-81.04265250906712!3d25.685254674393306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1702603992057!5m2!1sen!2sus" // Replace with your Google Maps embed URL
                             width="100%"
                             height="490"
                             style={{ border: 0 }}
                             className="rounded-lg w-full h-[500px] lg:h-full"
-                            loading="lazy">
+                            loading="lazy"
+                            >
                         </iframe>
                     </div>
                 )}
