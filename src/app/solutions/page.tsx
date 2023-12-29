@@ -1,10 +1,7 @@
 
-import Image from 'next/image'
 import Link from 'next/link';
 import { routes } from '@/data/routes';
 import { siteMetadata } from '../../config/siteMetadata.js';
-import Video from 'twilio/lib/rest/Video.js';
-
 export const metadata = {
   title: siteMetadata.title, //title of the tab
   description: `At Tech Automation Services, we pride ourselves on a decade of engineering excellence.
@@ -25,13 +22,13 @@ export default function Home() {
           src="/network.mp4"
           width={7680}
           height={7038}
-          autoPlay muted loop
+          muted loop
         />
         <video className='block md:hidden'
           src="/network-mobile.mp4"
           width={1200}
           height={1400}
-          autoPlay muted loop
+          muted loop
         />
 
         <div className="absolute top-52 cmdm:top-1/2 left-1/2 transform -translate-x-1/2 md:-translate-y-1/2">

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link';
 import { routes } from '@/data/routes';
 import { siteMetadata } from '../../config/siteMetadata.js';
@@ -45,13 +44,12 @@ export default function Home() {
           <div className="grid-about mx-auto px-4">
             <div className="grid__item-about grid__item-about-1">
               {/* Content for Column 1 */}
-              <Image
-                src="/team.png"
-                alt="Team"
-                width={3840}
-                height={2160}
-                className="rounded-lg"
-              />
+              <img 
+              src="/team.png" 
+              alt="Team" 
+              width="3840" 
+              height="2160" 
+              className="rounded-lg" />
             </div>
 
             <div className="grid__item-about order-2 grid__item-about-2 xl:text-left">
@@ -60,7 +58,7 @@ export default function Home() {
                 Recognizer Vehicular Robotic Platform
               </h2>
               <p className="text-main">
-                Imagine a robotic vehicle platform adaptable enough to perform taks like mowing the lawn, moving heavy stuff and even working in a warehouse. This is Recognizer, a vehicular robotic approach to automation.
+                Imagine a robotic vehicle platform adaptable enough to perform tasks like mowing the lawn, moving heavy stuff and even working in a warehouse. This is Recognizer, a vehicular robotic approach to automation.
               </p>
               <p className="text-main">
 
@@ -79,7 +77,7 @@ export default function Home() {
                 Programmable Artificial Assistant
               </h2>
               <p className="text-main">
-                Have you ever dreamed of an artificial assistant capable of accomplising custom tasks via voice commands just like Sci-Fi movies? This is totally possible with today's technology and we are working on it!
+                Have you ever dreamed of an artificial assistant capable of accomplishing custom tasks via voice commands just like Sci-Fi movies? This is totally possible with today&apos;s technology and we are working on it!
               </p>
               <p className="text-main">
 
@@ -88,11 +86,11 @@ export default function Home() {
 
             <div className="grid__item-about">
               {/* Content for Column 1 */}
-              <Image
+              <img
                 src="/team.png"
                 alt="Team"
-                width={3840}
-                height={2160}
+                width="3840"
+                height="2160"
                 className="rounded-lg"
               />
             </div>

@@ -1,5 +1,4 @@
 import { routes } from '@/data/routes';
-import Image from 'next/image'
 import Link from 'next/link';
 import { siteMetadata } from '../config/siteMetadata.js';
 
@@ -19,18 +18,18 @@ export default function Home() {
   return (
     <div>
       <header className='relative h-auto items-center'>
-        <Image
+        <img
           className='hidden md:block'
           src="/Home Page Brain 3.png"
-          width={7680}
-          height={7038}
+          width="7680"
+          height="7038"
           alt='Home Page'
         />
-        <Image
+        <img
           className='block md:hidden blur-xs'
           src="/Home Page Brain-phone.png"
-          width={3840}
-          height={2019}
+          width="3840"
+          height="2019"
           alt='Home Page'
         />
         <div className="absolute top-44 cmdm:top-1/2 left-1/2 cmdm:left-1/4 transform -translate-x-1/2 md:-translate-y-1/2">
@@ -57,11 +56,11 @@ export default function Home() {
           <div className="grid-about mx-auto px-4">
             <div className="grid__item-about grid__item-about-1">
               {/* Content for Column 1 */}
-              <Image
+              <img
                 src="/team.png"
                 alt="Team"
-                width={3840}
-                height={2160}
+                width="3840"
+                height="2160"
                 className="rounded-lg"
               />
             </div>

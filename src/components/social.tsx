@@ -1,21 +1,21 @@
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import HomeIcon from "@mui/icons-material/Home";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+// import FacebookIcon from "@mui/icons-material/Facebook";
+// import GitHubIcon from "@mui/icons-material/GitHub";
+// import HomeIcon from "@mui/icons-material/Home";
 
 
-import { socialMedia } from "../data/socialMedia";
+// import { socialMedia } from "../data/socialMedia";
 
 
-const Social = () => {
+// const Social = () => {
 
-  const { instagram, facebook, github, homepage } = socialMedia;
+//   const { instagram, facebook, github, homepage } = socialMedia;
 
-  return (
-      <div>
+//   return (
+//       <div>
 
-      </div>
-  );
-};
+//       </div>
+//   );
+// };
 
-export default Social;
+// export default Social;

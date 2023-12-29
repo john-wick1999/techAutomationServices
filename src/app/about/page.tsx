@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link';
 import { routes } from '@/data/routes';
 import { siteMetadata } from '../../config/siteMetadata.js';
@@ -19,18 +18,18 @@ export default function Home() {
   return (
     <div>
       <header className='relative h-auto items-center '>
-        <Image
+        <img
           className='hidden md:block blur-s brightness-75'
           src="/about.png"
-          width={7680}
-          height={7038}
+          width="7680"
+          height="7038"
           alt='Home Page'
         />
-        <Image
+        <img
           className='block md:hidden brightness-75'
           src="/team-mobile.png"
-          width={3840}
-          height={2019}
+          width="3840"
+          height="2019"
           alt='Home Page'
         />
         <div className="absolute top-52 cmdm:top-1/2 left-1/2 transform -translate-x-1/2 md:-translate-y-1/2">
@@ -47,11 +46,11 @@ export default function Home() {
           <div className="grid-about mx-auto px-4">
             <div className="grid__item-about grid__item-about-1">
               {/* Content for Column 1 */}
-              <Image
+              <img
                 src="/team-1.jpg"
                 alt="Team"
-                width={3840}
-                height={2160}
+                width="3840"
+                height="2160"
                 className="rounded-lg"
               />
             </div>
@@ -62,7 +61,7 @@ export default function Home() {
                 OUR JOURNEY TO EXCELLENCE
               </h2>
               <p className="text-main">
-                At Tech Automation Services, our journey began over a decade ago with a clear vision: to lead the wave of technological evolution and to use our engineering expertise to provide innovative solutions. Since our inception, we've been driven by a passion for creating systems that not only meet the current demands of businesses but propel them into the future. Our story is one of continuous learning, relentless innovation, and an unwavering commitment to excellence.
+                At Tech Automation Services, our journey began over a decade ago with a clear vision: to lead the wave of technological evolution and to use our engineering expertise to provide innovative solutions. Since our inception, we&apos;ve been driven by a passion for creating systems that not only meet the current demands of businesses but propel them into the future. Our story is one of continuous learning, relentless innovation, and an unwavering commitment to excellence.
               </p>
             </div>
           </div>
@@ -84,11 +83,11 @@ export default function Home() {
 
             <div className="grid__item-about">
               {/* Content for Column 1 */}
-              <Image
+              <img
                 src="/members.png"
                 alt="Team"
-                width={3840}
-                height={2160}
+                width="3840"
+                height="2160"
                 className="rounded-lg"
               />
             </div>
@@ -100,18 +99,18 @@ export default function Home() {
         <div className="grid-about mx-auto px-4">
           <div className="grid__item-about grid__item-about-1">
             {/* Content for Column 1 */}
-            <Image
+            <img
               src="/tech-2.png"
               alt="Team"
-              width={770}
-              height={900}
+              width="770"
+              height="900"
               className="rounded-lg hidden xl:block"
             />
-            <Image
+            <img
               src="/tech.png"
               alt="Team"
-              width={1200}
-              height={900}
+              width="1200"
+              height="900"
               className="rounded-lg block xl:hidden"
             />
           </div>
