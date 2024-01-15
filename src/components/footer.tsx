@@ -29,11 +29,6 @@ function Footer() {
             </a>
           </div>
           <div className="px-5 py-2">
-            <a href={routes.Careers} className="text-base md:text-4xl leading-6 text-white hover:text-gray-900">
-              Careers
-            </a>
-          </div>
-          <div className="px-5 py-2">
             <a href={routes.Contact} className="text-base md:text-4xl leading-6 text-white hover:text-gray-900">
               Contact us
             </a>

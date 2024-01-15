@@ -160,7 +160,7 @@ const ContactUs = () => {
                     <div className="p-8">
                         <iframe
                             title="Our Location"
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d975202.0568582813!2d-81.04265250906712!3d25.685254674393306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1702603992057!5m2!1sen!2sus" // Replace with your Google Maps embed URL
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d649597.3143643809!2d-80.2787163727179!3d25.91709144355549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1705359693920!5m2!1sen!2sus" // Replace with your Google Maps embed URL
                             width="100%"
                             height="490"
                             style={{ border: 0 }}

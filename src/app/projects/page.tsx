@@ -45,8 +45,8 @@ export default function Home() {
             <div className="grid__item-about grid__item-about-1">
               {/* Content for Column 1 */}
               <img 
-              src="/team.png" 
-              alt="Team" 
+              src="/robotDrive.png" 
+              alt="Autonomous Robot" 
               width="3840" 
               height="2160" 
               className="rounded-lg" />
@@ -87,8 +87,8 @@ export default function Home() {
             <div className="grid__item-about">
               {/* Content for Column 1 */}
               <img
-                src="/team.png"
-                alt="Team"
+                src="aiListener.png"
+                alt="Programmable Artificial Assistant"
                 width="3840"
                 height="2160"
                 className="rounded-lg"
@@ -101,7 +101,7 @@ export default function Home() {
       <div className='contact-us-button 
                       mx-auto
                       w-1/2 md:w-1/3 
-                      mt-28 md:mt-80
+                      mt-28 md:mt-72
                       py-5 md:py-16'>
         <Link href={routes.Contact} className='w-full'>
           <div>

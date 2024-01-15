@@ -84,11 +84,6 @@ function NavBar() {
                       PROJECTS
                     </Link>
                   </li>
-                  <li className={`nav-bar__items ${isActive(routes.Careers) ? 'active' : ''}`}>
-                    <Link href={routes.Careers} onClick={() => setNavbar(!navbar)}>
-                      CAREERS
-                    </Link>
-                  </li>
                   <li className={`nav-bar__items ${isActive(routes.Contact) ? 'active' : ''}`}>
                     <Link href={routes.Contact} onClick={() => setNavbar(!navbar)}>
                       <div className="rounded-lg px-5 py-2.5 items-center

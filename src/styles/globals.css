@@ -17,17 +17,19 @@
 
 body {
   background: linear-gradient(to right, #000000 40%, #000000, #05034B);
+  scroll-padding-top: -70px;  /* Adjust this value based on the height of your navbar */
+
 }
 
 footer {
   background: rgb(10, 0, 36);
   background: linear-gradient(45deg, rgba(10, 0, 36, 1) 0%, rgba(149, 0, 255, 1) 100%);
-  margin-top: 9rem;
+  margin-top: 7rem;
 }
 
 @media (min-width:768px) {
   footer {
-    margin-top: 22rem;
+    margin-top: 18rem;
   }
 }
 
@@ -233,10 +235,8 @@ footer {
 /* styles.css or the appropriate css file */
 .text-h2-main {
   @apply text-5xl font-extrabold text-purple-700;
-  @apply md:text-6xl;
-  @apply cmd:text-7xl;
-  @apply 2-5xl:text-8xl;
-  @apply 3xl:text-9xl;
+  @apply md:text-7xl;
+  @apply 3xl:text-8xl;
 }
 
 .text-h2-long {
@@ -248,11 +248,20 @@ footer {
 .text-h3-grip {
   @apply xl:mb-4;
   @apply text-purple-400;
-  @apply text-lg font-extrabold;
-  @apply md:text-xl;
-  @apply cmd:text-xl;
-  @apply 2-5xl:text-2xl;
-  @apply 3xl:text-2xl;
+  @apply text-2xl font-extrabold;
+  @apply md:text-4xl;
+  @apply cmd:text-6xl;
+  @apply 2-5xl:text-7xl;
+  @apply 3xl:text-7xl;
+}
+
+.text-h3-sub {
+  @apply text-purple-400;
+  @apply text-xl font-extrabold;
+  @apply md:text-2xl;
+  @apply cmd:text-3xl;
+  @apply 2-5xl:text-4xl;
+  @apply 3xl:text-5xl;
 }
 
 .contact-us-button {

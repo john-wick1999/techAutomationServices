@@ -88,49 +88,49 @@ export default function Home() {
           </h2>
 
           <div className="grid my-18">
-            <Link href={routes.Solutions} className="grid__item grid__item--lg">
+            <Link href={routes.SolutionsSoftware} className="grid__item grid__item--lg">
               <div className="flex h-full items-center justify-center">
                 <div id="software-bg" className="grid__item-image"></div>
                 <h3 className='text-h3-grip absolute'>SOFTWARE</h3>
               </div>
             </Link>
-            <Link href={routes.Solutions} className="grid__item grid__item--sm">
+            <Link href={routes.SolutionsVision} className="grid__item grid__item--sm">
               <div className="flex items-center justify-center h-full">
                 <div id="vision-bg" className="grid__item-image"></div>
                 <h3 className='text-h3-grip'>VISION</h3>
               </div>
             </Link>
-            <Link href={routes.Solutions} className="grid__item grid__item--sm">
+            <Link href={routes.SolutionsRobotics} className="grid__item grid__item--sm">
               <div className="flex items-center justify-center h-full">
                 <div id="robotics-bg" className="grid__item-image"></div>
                 <h3 className='text-h3-grip'>ROBOTICS</h3>
               </div>
             </Link>
-            <Link href={routes.Solutions} className="grid__item grid__item--db">
+            <Link href={routes.SolutionsMechanical} className="grid__item grid__item--db">
               <div className="flex items-center justify-center h-full">
                 <div id="mechanical-bg" className="grid__item-image"></div>
                 <h3 className='text-h3-grip'>MECHANICAL DESIGN</h3>
               </div>
             </Link>
-            <Link href={routes.Solutions} className="grid__item grid__item--db">
+            <Link href={routes.SolutionsMachineLearning} className="grid__item grid__item--db">
               <div className="flex items-center justify-center h-full">
                 <div id="machine-learning-bg" className="grid__item-image"></div>
                 <h3 className='text-h3-grip'>MACHINE LEARNING</h3>
               </div>
             </Link>
-            <Link href={routes.Solutions} className="grid__item grid__item--lg">
+            <Link href={routes.SolutionsElectrical} className="grid__item grid__item--lg">
               <div className="flex items-center justify-center h-full">
                 <div id="electrical-bg" className="grid__item-image"></div>
                 <h3 className='text-h3-grip'>ELECTRICAL DESIGN</h3>
               </div>
             </Link>
-            <Link href={routes.Solutions} className="grid__item grid__item--sm">
+            <Link href={routes.SolutionsIoT} className="grid__item grid__item--sm">
               <div className="flex items-center justify-center h-full">
                 <div id="iot-bg" className="grid__item-image"></div>
                 <h3 className='text-h3-grip'>IoT</h3>
               </div>
             </Link>
-            <Link href={routes.Solutions} className="grid__item grid__item--sm">
+            <Link href={routes.SolutionsAppDev} className="grid__item grid__item--sm">
               <div className="flex items-center justify-center h-full">
                 <div id="app-dev-bg" className="grid__item-image"></div>
                 <h3 className='text-h3-grip'>APP DEV</h3>

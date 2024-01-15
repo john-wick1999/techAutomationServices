@@ -122,23 +122,23 @@ export default function Home() {
             </p>
 
             <div className="my-6">
-              <h3 className="text-h3-grip mt-4">Innovation</h3>
+              <h3 className="text-h3-sub mt-4">Innovation</h3>
               <p>
                 To remain at the forefront of technological advancement and to continually offer cutting-edge solutions.
               </p>
 
-              <h3 className="text-h3-grip mt-4">Customization</h3>
+              <h3 className="text-h3-sub mt-4">Customization</h3>
               <p>
                 To tailor our services to the unique needs of each client, ensuring optimal integration and efficiency.
               </p>
 
-              <h3 className="text-h3-grip mt-4">Sustainability</h3>
+              <h3 className="text-h3-sub mt-4">Sustainability</h3>
               <p>
                 To develop solutions that not only benefit businesses but also contribute positively to our environment and society.
               </p>
 
-              <h3 className="text-h3-grip mt-4">Growth</h3>
-              <p>
+              <h3 className="text-h3-sub mt-4 pb-0">Growth</h3>
+              <p >
                 To grow alongside our clients and to foster partnerships that lead to mutual success.
               </p>
             </div>
@@ -154,7 +154,7 @@ export default function Home() {
       <div className='contact-us-button 
                       mx-auto
                       w-1/2 md:w-1/3 
-                      mt-24 md:mt-80
+                      mt-24 md:mt-72
                       py-5 md:py-16'>
         <Link href={routes.Contact} className='w-full'>
           <div>
